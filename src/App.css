@@ -1,0 +1,30 @@
+.App {
+  font-family: Arial, sans-serif;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.event-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.event-list li {
+  cursor: pointer;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+.event-list li:hover {
+  background-color: #f0f0f0;
+}
+
+.event-details {
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 40%;
+}

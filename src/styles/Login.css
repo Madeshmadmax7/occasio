@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.qwe-body {
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: rgb(188, 8, 8);
+}
+
+.qwe-error {
+  color: #fff;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.qwe-section {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.qwe-section::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgb(188, 8, 8), rgb(255, 255, 255), rgb(188, 8, 8));
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.qwe-section span {
+  position: relative;
+  display: block;
+  width: calc(6.25vw - 2px);
+  height: calc(6.25vw - 2px);
+  background: rgb(91, 8, 8);
+  z-index: 2;
+  transition: 1.5s;
+}
+
+.qwe-section span:hover {
+  background: #fff; /* Hover effect with white */
+  transition: 0s;
+}
+
+.qwe-signin {
+  position: absolute;
+  width: 400px;
+  background: rgb(188, 8, 8);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  border-radius: 4px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.9);
+}
+
+.qwe-signin .qwe-content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.qwe-signin .qwe-content h2 {
+  font-size: 2em;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.qwe-signin .qwe-content .qwe-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.qwe-signin .qwe-content .qwe-form .qwe-inputBox {
+  position: relative;
+  width: 100%;
+}
+
+.qwe-signin .qwe-content .qwe-form .qwe-inputBox input {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  border: none;
+  outline: none;
+  padding: 25px 10px 7.5px;
+  border-radius: 4px;
+  color: #000;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.qwe-signin .qwe-content .qwe-form .qwe-inputBox i {
+  position: absolute;
+  left: 0;
+  padding: 15px 10px;
+  font-style: normal;
+  color: black;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.qwe-signin .qwe-content .qwe-form .qwe-inputBox input:focus ~ i,
+.qwe-signin .qwe-content .qwe-form .qwe-inputBox input:valid ~ i {
+  transform: translateY(-7.5px);
+  font-size: 0.8em;
+  color: black;
+}
+
+.qwe-signin .qwe-content .qwe-form .qwe-links {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.qwe-signin .qwe-content .qwe-form .qwe-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.qwe-signin .qwe-content .qwe-form .qwe-links a:nth-child(2) {
+  color: white;
+  font-weight: 600;
+}
+
+.qwe-signin .qwe-content .qwe-form .qwe-inputBox input[type="submit"] {
+  padding: 10px;
+  background: white;
+  color: #000;
+  font-weight: 600;
+  font-size: 1.35em;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+}
+
+input[type="submit"]:active {
+  opacity: 0.8;
+  transform: scale(0.98);
+}

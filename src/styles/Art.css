@@ -1,0 +1,105 @@
+body {
+    background-color: white;
+    margin: 0;
+  }
+  
+  h1 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: black;
+    text-align: center;
+    margin-top: 1em;
+  }
+  
+  .art-list-container {
+    padding: 1em 2em;
+  }
+  
+  .art-list {
+    column-count: 3;
+    column-gap: 1.5em;
+    margin-top: 1.5em;
+    padding-left: 3.6em;
+  }
+  
+  .art-list img {
+    width: 100%;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .art-list img:hover {
+    transform: scale(1.05);
+  }
+  
+  @media screen and (max-width: 767px) {
+    .art-list {
+      column-count: 2;
+      padding-left: 1em;
+    }
+  }
+  
+  .art-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .art-modal-content {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .art-modal-image {
+    max-width: 650px;
+    max-height: 450px;
+    object-fit: contain;
+    border-radius: 5px;
+  }
+  
+  .art-modal-actions {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .art-modal-actions span {
+    cursor: pointer;
+  }
+  
+  .art-modal-actions i {
+    font-size: 32px;
+    color: black;
+    transition: color 0.3s ease;
+  }
+  
+  .art-modal-actions span.active i.fa-heart {
+    color: red;
+  }
+  
+  .art-modal-actions span.yellow i.fa-star {
+    color: yellow;
+  }
+  

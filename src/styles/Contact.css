@@ -1,0 +1,159 @@
+
+  .img-container-card{
+    width: 200px;
+    height: 100px;
+    object-fit: fill;
+  }
+  .container {
+    top: 0;
+    flex: 0 1 800px;
+    margin: auto;
+    padding: 0px;
+    position: absolute;
+    right: 10%;
+    top: 0px;
+    transform: translateY(10%);
+  }
+  
+  .screen {
+    position: relative;
+    background: rgb(188, 8, 8);
+    border-radius: 20px;
+    padding: 20px;
+    justify-content: center;
+  }
+  
+  
+  .screen-body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .screen-body-item {
+    flex: 1;
+    padding: 30px;
+    justify-content: center;
+  }
+  
+  .app-title .head{
+    color: #ffffff;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .app-contact {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ffffff;
+  }
+  
+  .app-form-group {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .app-form-group.message {
+    margin-top: 40px;
+  }
+  
+  .app-form-group.buttons {
+    justify-content: center;
+    margin-bottom: 0;
+    text-align: right;
+  }
+  
+  .app-form-control {
+    width: 100%;
+    padding: 15px;
+    background: none;
+    border: 1px solid #ffffff; 
+    color: #ffffff;
+    font-size: 16px;
+    outline: none;
+    border-radius: 5px;
+  }
+  
+  .app-form-control::placeholder {
+    color: #ffffff;
+  }
+  
+  .app-form-control:focus {
+    border-color: #ddd;
+  }
+  
+  .app-form-button {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    padding: 10px 20px 10px 20px;
+    outline: none;
+    justify-content: center;
+  }
+  
+  .app-form-button:hover {
+    background-color: #ffffff;
+    color: rgb(188, 8, 8);
+  }
+
+  .contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  
+  .left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .img-container-card {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 3.5%;
+    margin-left: 15%;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-left: 40%;
+
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; Center aligns the icons and text horizontally */
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.info-item i {
+    font-size: 20px;
+    color: rgb(188, 8, 8);
+}
+
+.info-item p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #444;
+}
+
+.contact-info h2 {
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 20px;
+    text-align: center;
+}

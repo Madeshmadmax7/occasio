@@ -1,0 +1,101 @@
+.poi-body {
+    background-color: #f9f9fa;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .poi-profile-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+  }
+  
+  .poi-user-card {
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 15px rgba(69, 90, 100, 0.1);
+    background-color: white;
+  }
+  
+  .poi-user-section {
+    background: rgb(188,8,8);
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .poi-profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .poi-profile-name {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .poi-info-section {
+    flex: 2;
+    padding: 20px;
+  }
+  
+  .poi-info-header {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 5px;
+  }
+  
+  .poi-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  
+  .poi-info-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    align-items: flex-start;
+  }
+  
+  .poi-info-label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #555;
+    margin: 0;
+  }
+  
+  .poi-info-text {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 400;
+    margin: 0;
+  }
+  .poi-logout-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .poi-logout-btn:hover {
+    background-color: #ff1a1a;
+  }
+  
